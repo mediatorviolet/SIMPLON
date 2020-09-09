@@ -1,0 +1,19 @@
+div.cadre {
+    border: 2px solid black;
+    width: 1000px;
+    height: 600px;
+}
+img {
+    height:150px;
+}
+div.ligne {
+    border-bottom: 2px solid black;
+    margin-bottom: 85px;
+    width: 70%;
+}
+h1 {
+    margin-bottom: 85px;
+}
+.text {
+    margin-left:350px;
+}
