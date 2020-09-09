@@ -36,3 +36,7 @@ img.logo {
     float: right;
     padding-right: 70px;
 }
+div {
+    display: flex;
+    justify-content: space-around;
+}
