@@ -1,0 +1,38 @@
+#center {
+    text-align: center;
+}
+table {
+    border-collapse:collapse;
+}
+#whiteborder {
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+#footwhite {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 0px;
+}
+#lrwhite {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+#ltopwhite {
+    border-left:1px solid white;
+    border-top: 1px solid white;
+}
+#rightwhite {
+    border-right: 1px solid white;
+}
+.dashedright {
+    border-right: 1px dashed black;
+}
+img.simplon {
+    float: left;
+    width: 20%;
+}
+img.logo {
+    float: right;
+    padding-right: 70px;
+}
