@@ -1,0 +1,27 @@
+body {
+    background-image: url(http://link-protect.xyz/integration-wos/img/BGMontagnes.png);
+    background-repeat: no-repeat;
+    font-family: "Shojumaru-Regular", Helvetica, Arial, sans-serif;
+}
+.bg_ecran {
+    background-image: url(/home/simplon/Documents/Code/WOS/drive-download-20200910T061709Z-001/ensembleFond.png);
+    background-repeat: no-repeat;
+    width: 1689px;
+    height: 2552px;
+    margin: 0 auto;
+}
+/* div menu principal */
+.menu_principal {
+    position:relative;
+    background-image: url(/home/simplon/Documents/Code/WOS/drive-download-20200910T061709Z-001/menuTop/CadreMenu.png);
+    background-repeat: no-repeat;
+    height: 123px;
+    width: 844px;
+    margin-left: 260px;
+    margin-top: 150px;
+}
+/* li menu principal */
+.menu_item {
+    float: left;
+    list-style-type: none;
+}
