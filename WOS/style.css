@@ -5,16 +5,23 @@ body {
     font-family: "Shojumaru-Regular", Helvetica, Arial, sans-serif;
 }
 .bg_ecran {
-    background-image: url(/home/simplon/Documents/Code/WOS/drive-download-20200910T061709Z-001/ensembleFond.png);
+    background-image: url(drive-download-20200910T061709Z-001/ensembleFond.png);
     background-repeat: no-repeat;
     width: 1689px;
     height: 2552px;
     margin: 0 auto;
 }
+.importantText {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*********** MENU PRINCIPAL ***********/
+
 /* div menu principal */
 .menu_principal {
     display: inline-flex;
-    background-image: url(/home/simplon/Documents/Code/WOS/drive-download-20200910T061709Z-001/menuTop/CadreMenu.png);
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/CadreMenu.png);
     background-repeat: no-repeat;
     height: 123px;
     width: 844px;
@@ -62,7 +69,123 @@ body {
     margin-left: -25px;
     margin-top: -2px;
 }
+
+/*********** PROFIL ***********/
+
 /* div Cadre Profil */
 .cadreProfil {
+    display: inline-flex;
     background-image: url(drive-download-20200910T061709Z-001/CadreProfil/CadreProfil.png);
+    background-repeat: no-repeat;
+    width: 335px;
+    height: 144px;
+    justify-content: space-around;
+    margin-right: -350px;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+.profilPseudo {
+    color: white;
+    font-size: 20px;
+    height: 20px;
+    margin-top: 7px;
+    position: relative;
+    left: 230px;
+}
+.profil {
+    list-style-type: none;
+    margin-right: 220px;
+    margin-bottom: -10px;
+    width: 200px;
+}
+.profilInfo {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 16px;
+}
+
+/*********** RESSOURCES ***********/
+
+/* div ressources */
+.ressources {
+    background-image: url(drive-download-20200910T061709Z-001/ressources/fond.png);
+    width: 1169px;
+    height: 103px;
+    margin-left: 260px;
+    margin-top: -5px;
+}
+
+/* li ressources */
+.ressList {
+    float: left;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+.pictoRessNour {
+    background-image: url(drive-download-20200910T061709Z-001/ressources/pictoRessNour.png);
+    width: 42px;
+    height: 32px;
+    list-style-type: none;
+}
+.pictoRessMetal {
+    background-image: url(drive-download-20200910T061709Z-001/ressources/pictoRessMetal.png);
+    width: 44px;
+    height: 32px;
+    list-style-type: none;
+}
+.pictoRessBois {
+    background-image: url(drive-download-20200910T061709Z-001/ressources/pictoRessBois.png);
+    width: 39px;
+    height: 29px;
+    list-style-type: none;
+}
+.pictoRessRoche {
+    background-image: url(drive-download-20200910T061709Z-001/ressources/pictoRessRoche.png);
+    width: 42px;
+    height: 35px;
+    list-style-type: none;
+}
+/* p ressources */
+.ressText {
+    width: 175px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+/*********** INFO ***********/
+
+/* div info */
+.info {
+    position: relative;
+    background-image: url(drive-download-20200910T061709Z-001/info/fondInfo.png);
+    width: 541px;
+    height: 67px;
+    margin-left: 570px;
+    margin-top: -30px;
+}
+/* li info */
+.infoList {
+    list-style-type: none;
+    float: left;
+}
+
+/*********** VUE GLOBALE ***********/
+
+/* div vue globale */
+.vueGlobale {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/vue\ globale.png);
+    background-repeat: no-repeat;
+    width: 724px;
+    height: 901px;
+    margin-left: 240px;
+    margin-top: -25px;
+}
+/* p vue globale */
+.vueGlobaleText {
+    margin-left: 100px;
 }
