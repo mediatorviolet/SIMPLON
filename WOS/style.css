@@ -34,40 +34,85 @@ body {
     list-style-type: none;
 }
 .btnAide {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnAide.png);
+    background-repeat: no-repeat;
     height: 96px;
+    width: 102px;
     margin-top: -2px;
 }
 .btnAide:hover {
     background-image: url(drive-download-20200910T061709Z-001/menuTop/btnAide\ MO.png);
 }
 .btnAmelio {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnAmelio.png);
+    background-repeat: no-repeat;
     height: 96px;
+    width: 102px;
     margin-top: -2px;
+}
+.btnAmelio:hover {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnAmelio\ MO.png);
 }
 .btnBonus {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnBonus.png);
+    background-repeat: no-repeat;
     height: 96px;
+    width: 102px;
     margin-top: -2px;
+}
+.btnBonus:hover {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnBonus\ MO.png);
 }
 .btnBoutique {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnBoutique.png);
+    background-repeat: no-repeat;
     height: 96px;
+    width: 102px;
     margin-top: -2px;
+}
+.btnBoutique:hover {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnBoutique\ MO.png);
 }
 .btnCarte {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnCarte.png);
+    background-repeat: no-repeat;
     height: 96px;
+    width: 102px;
     margin-top: -2px;
+}
+.btnCarte:hover {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnCarte\ MO.png);
 }
 .btnCentreVille {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnCentreVille.png);
+    background-repeat: no-repeat;
     height: 96px;
+    width: 102px;
     margin-top: -2px;
+}
+.btnCentreVille:hover {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnCentreVille\ MO.png);
 }
 .btnClassement {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnClassement.png);
+    background-repeat: no-repeat;
     height: 96px;
+    width: 102px;
     margin-top: -2px;
 }
+.btnClassement:hover {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnClassement\ MO.png);
+}
 .btnVueGlobale {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnVueGlobale.png);
+    background-repeat: no-repeat;
     height: 96px;
+    width: 102px;
     margin-left: -25px;
     margin-top: -2px;
+}
+.btnVueGlobale:hover {
+    background-image: url(drive-download-20200910T061709Z-001/menuTop/btnVueGlobale\ MO.png);
 }
 
 /*********** PROFIL ***********/
