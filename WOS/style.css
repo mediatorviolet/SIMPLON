@@ -232,5 +232,29 @@ body {
 }
 /* p vue globale */
 .vueGlobaleText {
+    position: relative;
+    text-align: center;
+    margin-left: 200px;
+    width: 330px;
+    top: 14px;
+}
+/* div map */
+.map {
+    background-image: url(drive-download-20200910T061709Z-001/map-WOS.png);
+    background-repeat: no-repeat;
+    width: 530px;
+    height: 590px;
     margin-left: 100px;
+    margin-top: 50px;
+}
+/* p chantier */
+.chantierText {
+    margin-left: 20px;
+    margin-top: 32px;
+}
+/* table chantier */
+.tableChantier {
+    width: 630px;
+    margin-left: 50px;
+    height: 150px;
 }
