@@ -327,9 +327,42 @@ body {
     height: 352px;
     left: 970px;
     bottom: 802px;
+    font-size: 20px;
 }
 /* p production */
 .productionTitle {
     text-align: center;
     top: 15px;
+}
+/* table production */
+.tableProd {
+    position: relative;
+    width: 450px;
+    height: 170px;
+    top: 18px;
+    left: 45px;
+}
+.pictoBois {
+    background-image: url(drive-download-20200910T061709Z-001/ressources/pictoRessBois.png);
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 29px;
+}
+.pictoMetal {
+    background-image: url(drive-download-20200910T061709Z-001/ressources/pictoRessMetal.png);
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 32px;
+}
+.pictoNour {
+    background-image: url(drive-download-20200910T061709Z-001/ressources/pictoRessNour.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 32px;
+}
+.pictoRoche {
+    background-image: url(drive-download-20200910T061709Z-001/ressources/pictoRessRoche.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 35px;
 }
