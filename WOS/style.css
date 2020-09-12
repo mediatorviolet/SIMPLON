@@ -14,6 +14,7 @@ body {
 .importantText {
     font-size: 20px;
     font-weight: bold;
+    position: relative;
 }
 
 /*********** MENU PRINCIPAL ***********/
@@ -257,4 +258,78 @@ body {
     width: 630px;
     margin-left: 50px;
     height: 150px;
+    margin-top:-5px;
+}
+
+/*********** BUREAU ***********/
+
+/* divs bureau */
+.bureau {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/clan.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 478px;
+    height: 195px;
+    left: 970px;
+    bottom: 920px;
+}
+/* p bureau */
+.bureauText {
+    position: relative;
+    text-align: center;
+    top: 15px;
+}
+
+/*********** CLAN ***********/
+
+/* div clan */
+.clan {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/clan.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 478px;
+    height: 195px;
+    left:970px;
+    bottom: 790px;
+}
+.fondXP {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/ElemClan/fondXP.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 372px;
+    height: 55px;
+    left: 50px;
+}
+.barreXP {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/ElemClan/barreXP.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 295px;
+    height: 31px;
+    left: 38px;
+    top: 11px;
+}
+/* p clan */
+.clanText {
+    position: relative;
+    text-align: center;
+    top: 15px;
+}
+
+/*********** PRODUCTION ***********/
+
+/* div production */
+.production {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/Production.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 482px;
+    height: 352px;
+    left: 970px;
+    bottom: 802px;
+}
+/* p production */
+.productionTitle {
+    text-align: center;
+    top: 15px;
 }
