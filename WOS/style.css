@@ -16,6 +16,11 @@ body {
     font-weight: bold;
     position: relative;
 }
+.title {
+    position: relative;
+    text-align: center;
+    top: 15px;
+}
 
 /*********** MENU PRINCIPAL ***********/
 
@@ -273,12 +278,6 @@ body {
     left: 970px;
     bottom: 920px;
 }
-/* p bureau */
-.bureauText {
-    position: relative;
-    text-align: center;
-    top: 15px;
-}
 
 /*********** CLAN ***********/
 
@@ -309,12 +308,6 @@ body {
     left: 38px;
     top: 11px;
 }
-/* p clan */
-.clanText {
-    position: relative;
-    text-align: center;
-    top: 15px;
-}
 
 /*********** PRODUCTION ***********/
 
@@ -328,11 +321,6 @@ body {
     left: 970px;
     bottom: 802px;
     font-size: 20px;
-}
-/* p production */
-.productionTitle {
-    text-align: center;
-    top: 15px;
 }
 /* table production */
 .tableProd {
@@ -365,4 +353,60 @@ body {
     background-repeat: no-repeat;
     width: 42px;
     height: 35px;
+}
+.tableProd2 {
+    position: relative;
+    width: 360px;
+    height: 70px;
+    left: 64px;
+    top: 30px;
+}
+
+/*********** PUISSANCE ***********/
+
+/* div puissance */
+.puissance {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/puissance.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 729px;
+    height: 229px;
+    left: 238px;
+    bottom: 810px;
+}
+/* table puissance */
+.tablePuissance {
+    position: relative;
+    font-style: italic;
+    width: 590px;
+    height: 177px;
+    left: 70px;
+    top: 3px;
+}
+
+
+/*********** ALLIÉS ***********/
+
+/* div allies */
+.allies {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/ALLIES.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 482px;
+    height: 352px;
+    left: 970px;
+    bottom: 1060px;
+}
+
+/*********** CHAT ***********/
+
+/* div chat */
+.chat {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/tchat.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 729px;
+    height: 479px;
+    left: 238px;
+    bottom: 1190px;
 }
