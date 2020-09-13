@@ -21,6 +21,12 @@ body {
     text-align: center;
     top: 15px;
 }
+.carre{
+    background-color: gray;
+    position: relative;
+    width: 55px;
+    height: 55px;
+}
 
 /*********** MENU PRINCIPAL ***********/
 
@@ -381,7 +387,15 @@ body {
     width: 590px;
     height: 177px;
     left: 70px;
-    top: 3px;
+    top: -6px;
+}
+.rectangle {
+    background-color: gray;
+    position: relative;
+    width: 80px;
+    height: 30px;
+    left: 35px;
+    bottom: 5px;
 }
 
 
@@ -396,6 +410,22 @@ body {
     height: 352px;
     left: 970px;
     bottom: 1060px;
+}
+.curseurAss {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/curseurAss.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 52px;
+    height: 53px;
+    left: 429px;
+    top: 16px;
+}
+.profilPic {
+    background-image: url(drive-download-20200910T061709Z-001/georges-abitbol.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 55px;
+    height: 55px;
 }
 
 /*********** CHAT ***********/
