@@ -1,15 +1,19 @@
 body {
-    background-image: url(http://link-protect.xyz/integration-wos/img/BGMontagnes.png);
+    background-image: url(drive-download-20200910T061709Z-001/BGMontagnes.png);
     background-repeat: no-repeat;
+    width: 1920px;
+    height: 1708px;
     background-color: black;
     font-family: "Shojumaru-Regular", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    /*margin: 0 auto;*/
 }
 .bg_ecran {
     background-image: url(drive-download-20200910T061709Z-001/ensembleFond.png);
     background-repeat: no-repeat;
     width: 1689px;
     height: 2552px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 .importantText {
     font-size: 20px;
@@ -50,7 +54,7 @@ body {
     background-repeat: no-repeat;
     height: 96px;
     width: 102px;
-    margin-top: -2px;
+    margin-top: -5px;
 }
 .btnAide:hover {
     background-image: url(drive-download-20200910T061709Z-001/menuTop/btnAide\ MO.png);
@@ -60,7 +64,7 @@ body {
     background-repeat: no-repeat;
     height: 96px;
     width: 102px;
-    margin-top: -2px;
+    margin-top: -5px;
 }
 .btnAmelio:hover {
     background-image: url(drive-download-20200910T061709Z-001/menuTop/btnAmelio\ MO.png);
@@ -70,7 +74,7 @@ body {
     background-repeat: no-repeat;
     height: 96px;
     width: 102px;
-    margin-top: -2px;
+    margin-top: -5px;
 }
 .btnBonus:hover {
     background-image: url(drive-download-20200910T061709Z-001/menuTop/btnBonus\ MO.png);
@@ -80,7 +84,7 @@ body {
     background-repeat: no-repeat;
     height: 96px;
     width: 102px;
-    margin-top: -2px;
+    margin-top: -5px;
 }
 .btnBoutique:hover {
     background-image: url(drive-download-20200910T061709Z-001/menuTop/btnBoutique\ MO.png);
@@ -90,7 +94,7 @@ body {
     background-repeat: no-repeat;
     height: 96px;
     width: 102px;
-    margin-top: -2px;
+    margin-top: -5px;
 }
 .btnCarte:hover {
     background-image: url(drive-download-20200910T061709Z-001/menuTop/btnCarte\ MO.png);
@@ -100,7 +104,7 @@ body {
     background-repeat: no-repeat;
     height: 96px;
     width: 102px;
-    margin-top: -2px;
+    margin-top: -5px;
 }
 .btnCentreVille:hover {
     background-image: url(drive-download-20200910T061709Z-001/menuTop/btnCentreVille\ MO.png);
@@ -110,7 +114,7 @@ body {
     background-repeat: no-repeat;
     height: 96px;
     width: 102px;
-    margin-top: -2px;
+    margin-top: -5px;
 }
 .btnClassement:hover {
     background-image: url(drive-download-20200910T061709Z-001/menuTop/btnClassement\ MO.png);
@@ -121,7 +125,7 @@ body {
     height: 96px;
     width: 102px;
     margin-left: -25px;
-    margin-top: -2px;
+    margin-top: -5px;
 }
 .btnVueGlobale:hover {
     background-image: url(drive-download-20200910T061709Z-001/menuTop/btnVueGlobale\ MO.png);
@@ -427,6 +431,17 @@ body {
     width: 55px;
     height: 55px;
 }
+/* table alliés */
+.tableAllies {
+    font-style: italic;
+    position: relative;
+    left: 80px;
+    bottom: 35px;
+}
+.textAllies {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
 
 /*********** CHAT ***********/
 
@@ -439,4 +454,86 @@ body {
     height: 479px;
     left: 238px;
     bottom: 1190px;
+}
+.curseurAss2 {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/curseurAss.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 52px;
+    height: 53px;
+    left: 676px;
+    top: 16px;
+}
+.chatTxtG {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/ElemChat/champTxtG.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 25px;
+    height: 47px;
+    left: 50px;
+    bottom: 365px;
+}
+.chatTxt {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/ElemChat/champtxt.png);
+    background-repeat: repeat-x;
+    position: relative;
+    width: 486px;
+    height: 47px;
+    bottom: 412px;
+    left: 74px;
+}
+.chatTxtD {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/ElemChat/champtxtD.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 25px;
+    height: 47px;
+    left: 560px;
+    bottom: 459px;
+}
+.btnSendMail {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/ElemChat/btnSendMail.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 97px;
+    height: 61px;
+    bottom: 512px;
+    left: 590px;
+}
+.btnSendMail:hover {
+    background-image: url(drive-download-20200910T061709Z-001/Fenetre/ElemChat/btnSendMailMO.png);
+}
+/* table chat */
+.tableChat {
+    position: relative;
+    width: 490px;
+    height: 330px;
+    padding-left: 10px;
+    left: 10px;
+    bottom: 20px;
+    font-size: 18px;
+}
+.chatName {
+    font-weight: bold;
+    color: #0A0A8C;
+}
+.chatConnect {
+    position: relative;
+    font-style: italic;
+    left: 510px;
+    bottom: 371px;
+    width: 172px;
+    font-size: 19px;
+}
+.grayImg {
+    filter: grayscale(100%);
+}
+.disc {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #20FD02;
+    top: 45px;
+    left: 45px;
 }
