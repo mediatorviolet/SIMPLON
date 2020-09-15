@@ -1,0 +1,100 @@
+/*div {
+    border: 3px solid black;
+}*/
+body {
+    color: white;
+}
+h1 {
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.user {
+    position: relative;
+    right: 130px;
+}
+.ia {
+    position: relative;
+    left: 130px;
+}
+.led{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.led1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.ledDiv{
+    width: 455px;
+    height: 50px;
+
+}
+.ledBtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: gray;
+    margin-right: 30px;
+}
+.pic1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.pic {
+    width: 200px;
+    height: 200px;
+    border:2px solid white ;
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+.jeuBorder {
+    border: 10px solid white;
+}
+.alignCenter {
+    text-align: center;
+}
+.choixText {
+    margin-top: 80px;
+}
+.pierre {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position: center;
+}
+.pierre:hover {
+    background-image: url(pierre.png);
+}
+.feuille {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position: center;
+}
+.feuille:hover {
+    background-image: url(feuille.png);
+}
+.ciseaux {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position: center;
+}
+.ciseaux:hover {
+    background-image: url(ciseaux.png);
+}
+#userWindow {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position: center;
+}
