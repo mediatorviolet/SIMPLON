@@ -24,7 +24,7 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .led1 {
     position: relative;
@@ -91,4 +91,10 @@ h1 {
 }
 .ciseaux:hover {
     background-image: url(ciseaux.png);
+}
+#userWindow {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position: center;
 }

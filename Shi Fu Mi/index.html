@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-    <div style="background-color: #263238; border-radius: 10px;">
+<body onload="getPseudo();">
+    <div style="background-color: #263238; border-radius: 50px;">
         <!--DÉBUT TITRE-->
         <div>
             <h1>SHI FU MI</h1>
@@ -16,7 +17,7 @@
 
         <!--DÉBUT PSEUDO-->
         <div class="led">
-            <div class="user"><h2>User</h2></div>
+            <div class="user"><h2 id="pseudo">User</h2></div>
             <div class="ia"><h2>IA</h2></div>
         </div>
         <!--FIN PSEUDO-->
@@ -24,9 +25,9 @@
         <!--DÉBUT LED-->
         <div class="led">
             <div class="led1" style="right: 73px;">
-                <div class="ledDiv ledBtn"></div>
-                <div class="ledDiv ledBtn"></div>
-                <div class="ledDiv ledBtn"></div>
+                <div class="ledDiv ledBtn" id="led1"></div>
+                <div class="ledDiv ledBtn" id="led2"></div>
+                <div class="ledDiv ledBtn" id="led3"></div>
             </div>
             <div class="led1" style="left: 73px;">
                 <div class="ledDiv ledBtn"></div>
@@ -38,7 +39,7 @@
 
         <!--DÉBUT JEU-->
         <div class="pic1">
-            <div class="pic jeuBorder"></div>
+            <div class="pic jeuBorder" id="userWindow"></div>
             <div class="pic jeuBorder"></div>
             <div class="pic jeuBorder"></div>
         </div>
@@ -46,9 +47,9 @@
 
         <!--DÉBUT CHOIX-->
         <div class="pic1">
-            <div class="pic alignCenter pierre"><h2>Pierre</h2></div>
-            <div class="pic alignCenter feuille"><h2>Feuille</h2></div>
-            <div class="pic alignCenter ciseaux"><h2>Ciseaux</h2></div>
+            <div class="pic alignCenter pierre" id="pierre" onclick="getPierre()"><h2>Pierre</h2></div>
+            <div class="pic alignCenter feuille" id="feuille" onclick="getFeuille()"><h2>Feuille</h2></div>
+            <div class="pic alignCenter ciseaux" id="ciseaux" onclick="getCiseaux()"><h2>Ciseaux</h2></div>
         </div>
         <!--FIN CHOIX-->
     </div>
