@@ -1,4 +1,4 @@
-var pseudo, round, compteurOrdi, compteurUser, shifumiOrdi, shifumi;
+var pseudo, compteurOrdi, compteurUser, shifumiOrdi, shifumi;
 
 function mathRandomInt(a, b) {
     if (a > b) {
@@ -13,9 +13,6 @@ function mathRandomInt(a, b) {
 function getPseudo() {
     pseudo = prompt("Quel est ton nom ?")
     document.getElementById("pseudo").innerText = pseudo;
-}
-function getRound() {
-    round = Number(prompt("Combien de manches veux-tu jouer ?")); 
 }
 compteurOrdi = 0;
 compteurUser = 0;
@@ -35,6 +32,6 @@ function greenLedUser() {
     document.getElementById("led1").style.backgroundColor = "green";
 }
 function getPierre () {
-    p = document.getElementsByClassName("pierre");
-    p.onclick = document.getElementById("userWindow").style.backgroundImage = "url(pierre.png)";
+    p = document.getElementsById("pierre");
+    p.onclick = document.getElementById("userWindow").style.backgroundImage = "url('pierre.png')";
 }

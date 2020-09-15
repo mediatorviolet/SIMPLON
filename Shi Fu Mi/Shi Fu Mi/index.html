@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body onload="getPseudo(); getRound(); getPierre();">
+<body onload="getPseudo();">
     <div style="background-color: #263238; border-radius: 50px;">
         <!--DÉBUT TITRE-->
         <div>
@@ -47,7 +47,9 @@
 
         <!--DÉBUT CHOIX-->
         <div class="pic1">
-            <div class="pic alignCenter pierre"><h2>Pierre</h2></div>
+            <button onclick="getPierre()">
+                <div class="pic alignCenter pierre" id="pierre"><h2>Pierre</h2></div>
+            </button>
             <div class="pic alignCenter feuille"><h2>Feuille</h2></div>
             <div class="pic alignCenter ciseaux"><h2>Ciseaux</h2></div>
         </div>
