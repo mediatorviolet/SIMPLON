@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body onload="getPseudo();">
+<body onload=";">
     <div style="background-color: #263238; border-radius: 50px;">
         <!--DÉBUT TITRE-->
         <div>
@@ -30,9 +30,9 @@
                 <div class="ledDiv ledBtn" id="led3"></div>
             </div>
             <div class="led1" style="left: 73px;">
-                <div class="ledDiv ledBtn"></div>
-                <div class="ledDiv ledBtn"></div>
-                <div class="ledDiv ledBtn" style="margin-right: 0px;"></div>
+                <div class="ledDiv ledBtn" id="ledIA1"></div>
+                <div class="ledDiv ledBtn" id="ledIA2"></div>
+                <div class="ledDiv ledBtn" id="ledIA3" style="margin-right: 0px;"></div>
             </div>
         </div>
         <!--FIN LED-->
@@ -40,8 +40,8 @@
         <!--DÉBUT JEU-->
         <div class="pic1">
             <div class="pic jeuBorder" id="userWindow"></div>
-            <div class="pic jeuBorder"></div>
-            <div class="pic jeuBorder"></div>
+            <div class="pic jeuBorder"><h1 class="alignCenter" id="round"></h1></div>
+            <div class="pic jeuBorder" id="iaWindow"></div>
         </div>
         <!--FIN JEU-->
 

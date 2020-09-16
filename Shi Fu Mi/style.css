@@ -73,6 +73,7 @@ h1 {
 }
 .pierre:hover {
     background-image: url(pierre.png);
+    cursor: pointer;
 }
 .feuille {
     background-image: none;
@@ -82,6 +83,7 @@ h1 {
 }
 .feuille:hover {
     background-image: url(feuille.png);
+    cursor: pointer;
 }
 .ciseaux {
     background-image: none;
@@ -91,10 +93,20 @@ h1 {
 }
 .ciseaux:hover {
     background-image: url(ciseaux.png);
+    cursor: pointer;
 }
 #userWindow {
     background-image: none;
     background-repeat: no-repeat;
     background-size: 170px;
     background-position: center;
+}
+#iaWindow {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position: center;
+}
+#round {
+    margin-top: 40px;
 }
