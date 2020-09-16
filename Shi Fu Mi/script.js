@@ -60,16 +60,20 @@ function greenLedIA3() {
 
 //border functions
 function greenBorderUser() {
-    document.getElementById("userWindow").style.border = "10px solid green"
+    document.getElementById("userWindow").style.border = "10px solid green";
 }
 function redBorderUser() {
-    document.getElementById("userWindow").style.border = "10px solid red"
+    document.getElementById("userWindow").style.border = "10px solid red";
 }
 function greenBorderIA() {
-    document.getElementById("iaWindow").style.border = "10px solid green"
+    document.getElementById("iaWindow").style.border = "10px solid green";
 }
 function redBorderIA() {
-    document.getElementById("iaWindow").style.border = "10px solid red"
+    document.getElementById("iaWindow").style.border = "10px solid red";
+}
+function whiteBorder() {
+    document.getElementById("userWindow").style.border = "10px solid white";
+    document. getElementById("iaWindow").style.border = "10px solid white";
 }
 
 function getPierre() {
@@ -108,46 +112,53 @@ function getIA() {
     }
 }
 
+count = 0
 
 function comparaison() {
-    for (count = 0; count < 3; count++) {
-        shifumi = /* qqch pour reset le choix */;
-        document.getElementById("round").innerText = count+1;
-        if (shifumiOrdi == 'pierre' && shifumi == 'feuille' || shifumiOrdi == 'feuille' && shifumi == 'ciseaux' || shifumiOrdi == 'ciseaux' && shifumi == 'pierre') {
-            compteurUser = compteurUser + 1;
-            greenBorderUser();
-            redBorderIA();
-            alert('Score user ' + compteurUser);
-            alert(count+1);
-            if (count == 0) {
-                greenLedUser1();
-                redLedIA1();
-            } else if (count == 1) {
-                greenLedUser2();
-                redLedIA2();
-            } else {
-                greenLedUser3();
-                redLedIA3();
-            }
-        } else if (shifumiOrdi == 'pierre' && shifumi == 'ciseaux' || shifumiOrdi == 'feuille' && shifumi == 'pierre' || shifumiOrdi == 'ciseaux' && shifumi == 'feuille') {
-            compteurOrdi = compteurOrdi + 1;
-            redBorderUser();
-            greenBorderIA();
-            alert('Score IA ' + compteurOrdi);
-            alert(count+1);
-            if (count == 0) {
-                redLedUser1();
-                greenLedIA1();
-            } else if (count == 1) {
-                redLedUser2();
-                greenLedIA2();
-            } else {
-                redLedUser3();
-                greenLedIA3();
-            }
+    document.getElementById("round").innerText = count + 1;
+    if (shifumiOrdi == 'pierre' && shifumi == 'feuille' || shifumiOrdi == 'feuille' && shifumi == 'ciseaux' || shifumiOrdi == 'ciseaux' && shifumi == 'pierre') {
+        compteurUser = compteurUser + 1;
+        greenBorderUser();
+        redBorderIA();
+        if (count == 0) {
+            greenLedUser1();
+            redLedIA1();
+        } else if (count == 1) {
+            greenLedUser2();
+            redLedIA2();
         } else {
-            alert('égalité');
-            alert(count+1);
+            greenLedUser3();
+            redLedIA3();
+        }
+    } else if (shifumiOrdi == 'pierre' && shifumi == 'ciseaux' || shifumiOrdi == 'feuille' && shifumi == 'pierre' || shifumiOrdi == 'ciseaux' && shifumi == 'feuille') {
+        compteurOrdi = compteurOrdi + 1;
+        redBorderUser();
+        greenBorderIA();
+        if (count == 0) {
+            redLedUser1();
+            greenLedIA1();
+        } else if (count == 1) {
+            redLedUser2();
+            greenLedIA2();
+        } else {
+            redLedUser3();
+            greenLedIA3();
+        }
+    } else {
+        whiteBorder();
+        count = count - 1;
+    }
+    count = count + 1;
+    if (compteurOrdi > compteurUser && count == 3) {
+        window.alert('Perdu...');
+    } else if (compteurOrdi == compteurUser && count == 3) {
+        window.alert('Égalité');
+    } else if (compteurOrdi < compteurUser && count == 3) {
+        window.alert('GGWP ' + pseudo + '!');
+    }
+    if (count == 3) {
+        if (confirm("Veux-tu rejouer ?")) {
+            document.location.reload();
         }
     }
 }
