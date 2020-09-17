@@ -150,6 +150,8 @@ function comparaison() {
 function reset() {
     if (confirm('Veux-tu rejouer ?')) {
         document.getElementById("round").innerText = "1";
+        document.getElementById("userWindow").style.backgroundImage = "none";
+        document.getElementById("iaWindow").style.backgroundImage = "none";
         count = 0;
         compteurOrdi = 0;
         compteurUser = 0;
