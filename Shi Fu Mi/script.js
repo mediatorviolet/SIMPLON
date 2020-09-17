@@ -18,44 +18,47 @@ compteurOrdi = 0;
 compteurUser = 0;
 
 // Led functions
-function redLedUser1() {
-    document.getElementById("led1").style.backgroundColor = "red";
+function redLedUser() {
+    if (count == 0) {
+        document.getElementById("led1").style.backgroundColor = "red";
+    } else if (count == 1) {
+        document.getElementById("led2").style.backgroundColor = "red";
+    } else {
+        document.getElementById("led3").style.backgroundColor = "red";
+    }
 }
-function redLedUser2() {
-    document.getElementById("led2").style.backgroundColor = "red";
+function greenLedUser() {
+    if (count == 0) {
+        document.getElementById("led1").style.backgroundColor = "green";
+    } else if (count == 1) {
+        document.getElementById("led2").style.backgroundColor = "green";
+    } else {
+        document.getElementById("led3").style.backgroundColor = "green";
+    }
 }
-function redLedUser3() {
-    document.getElementById("led3").style.backgroundColor = "red";
+function redLedIA() {
+    if (count == 0) {
+        document.getElementById("ledIA1").style.backgroundColor = "red";
+    } else if (count == 1) {
+        document.getElementById("ledIA2").style.backgroundColor = "red";
+    } else {
+        document.getElementById("ledIA3").style.backgroundColor = "red";
+    }
 }
-
-function greenLedUser1() {
-    document.getElementById("led1").style.backgroundColor = "green";
+function greenLedIA() {
+    if (count == 0) {
+        document.getElementById("ledIA1").style.backgroundColor = "green";
+    } else if (count == 1) {
+        document.getElementById("ledIA2").style.backgroundColor = "green";    
+    } else {
+        document.getElementById("ledIA3").style.backgroundColor = "green";    
+    }
 }
-function greenLedUser2() {
-    document.getElementById("led2").style.backgroundColor = "green";
-}
-function greenLedUser3() {
-    document.getElementById("led3").style.backgroundColor = "green";
-}
-
-function redLedIA1() {
-    document.getElementById("ledIA1").style.backgroundColor = "red";
-}
-function redLedIA2() {
-    document.getElementById("ledIA2").style.backgroundColor = "red";
-}
-function redLedIA3() {
-    document.getElementById("ledIA3").style.backgroundColor = "red";
-}
-
-function greenLedIA1() {
-    document.getElementById("ledIA1").style.backgroundColor = "green";
-}
-function greenLedIA2() {
-    document.getElementById("ledIA2").style.backgroundColor = "green";
-}
-function greenLedIA3() {
-    document.getElementById("ledIA3").style.backgroundColor = "green";
+function grayLed() {
+    var elem = document.getElementsByClassName("ledBtn");
+    for (var i = 0; i < elem.length; i++) {
+        elem[i].style.backgroundColor = "gray";
+    }
 }
 
 //border functions
@@ -112,7 +115,7 @@ function getIA() {
     }
 }
 
-count = 0
+count = 0;
 
 function comparaison() {
     document.getElementById("round").innerText = count + 1;
@@ -120,30 +123,14 @@ function comparaison() {
         compteurUser = compteurUser + 1;
         greenBorderUser();
         redBorderIA();
-        if (count == 0) {
-            greenLedUser1();
-            redLedIA1();
-        } else if (count == 1) {
-            greenLedUser2();
-            redLedIA2();
-        } else {
-            greenLedUser3();
-            redLedIA3();
-        }
+        greenLedUser();
+        redLedIA();
     } else if (shifumiOrdi == 'pierre' && shifumi == 'ciseaux' || shifumiOrdi == 'feuille' && shifumi == 'pierre' || shifumiOrdi == 'ciseaux' && shifumi == 'feuille') {
         compteurOrdi = compteurOrdi + 1;
         redBorderUser();
         greenBorderIA();
-        if (count == 0) {
-            redLedUser1();
-            greenLedIA1();
-        } else if (count == 1) {
-            redLedUser2();
-            greenLedIA2();
-        } else {
-            redLedUser3();
-            greenLedIA3();
-        }
+        redLedUser();
+        greenLedIA();
     } else {
         whiteBorder();
         count = count - 1;
@@ -157,8 +144,18 @@ function comparaison() {
         window.alert('GGWP ' + pseudo + '!');
     }
     if (count == 3) {
-        if (confirm("Veux-tu rejouer ?")) {
-            document.location.reload();
-        }
+        reset();
+    }
+}
+function reset() {
+    if (confirm('Veux-tu rejouer ?')) {
+        document.getElementById("round").innerText = "1";
+        count = 0;
+        compteurOrdi = 0;
+        compteurUser = 0;
+        grayLed();
+        whiteBorder();
+    } else {
+        document.location.reload();
     }
 }
