@@ -117,7 +117,7 @@ h6 {
     position: relative;
     display: inline-block;
     min-width: 155px;
-    color: #000;
+    color: #fff;
     padding: 14px 0;
     font-size: 14px;
     font-weight: 600;
@@ -139,8 +139,8 @@ h6 {
 -----------------------------------------*/
 
 .navbar {
-    background: rgba(50, 50, 50, 1);
-    position: fixed;
+    background: rgba(50, 50, 50, .2);
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -235,9 +235,9 @@ h6 {
 .navbar .navbar-nav > li > a.active {
     font-weight: 600;
 }
-.navbar-nav {
+/*.navbar-nav {
     flex-direction: row;
-}
+}*/
 
 /* --------------------------------------
    Home
