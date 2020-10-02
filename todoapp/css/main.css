@@ -1,0 +1,9 @@
+body {
+    color: #fff;
+}
+ul li {
+    list-style-type: none;
+}
+div, input {
+    border-radius: 10px;
+}

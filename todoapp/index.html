@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand ml-5">
+            <h1>ToDo App</h1>
+        </a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Container -->
+    <section class="container">
+        <div class="row">
+            <div id="test" class="col bg-dark mt-3 mr-lg-2 mr-xs-auto">
+                <h3 class="mb-5">List</h3>
+                <div class="mb-5">
+                    <ul class="bg-secondary">
+                        <li class="myList"><input type="checkbox" class="mr-3 myCheck" onclick="check()">task 1</li>
+                        <li class="myList"><input type="checkbox" class="mr-3 myCheck" onclick="check()">task 2</li>
+                    </ul>
+                </div>
+                <div>
+                    <input id="newTask" class="mb-3" type="text" placeholder="Create new task">
+                    <button id="addBtn" type="button" class="btn btn-warning"
+                        onclick="addTask()">Create</button>
+                </div>
+            </div>
+            <div class="col bg-dark mt-3 ml-lg-2 ml-xs-auto">
+                <div class="mb-5">
+                    <h3><input type="checkbox" class="mr-3">Task 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum corporis eius ducimus aspernatur
+                        dolorum vero officia quam asperiores accusamus! Neque quasi illo in obcaecati error distinctio.
+                        Necessitatibus odit eaque a.</p>
+                </div>
+                <div class="mb-3">
+                    <!--<input class="mb-3" type="text-area" placeholder="Add new description">-->
+                    <textarea name="" id="" cols="55" rows="5" placeholder="Add new description"></textarea>
+                    <button type="button" class="btn btn-warning mb-4">Add</button>
+                </div>
+                <div class="row justify-content-end mx-auto">
+                    <button type="button" class="btn btn-warning mb-4"><i class="fas fa-chevron-left"></i></button>
+                    <h3 class="mx-auto">1</h3>
+                    <button type="button" class="btn btn-warning mb-4"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Container -->
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1decaa985d.js" crossorigin="anonymous"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
