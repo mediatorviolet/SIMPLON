@@ -25,3 +25,5 @@ function addTask(){
         
     }
 }
+
+// idée => quand clicked important va en haut de la liste (:
