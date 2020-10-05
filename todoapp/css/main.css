@@ -7,3 +7,10 @@ ul li {
 div, input {
     border-radius: 10px;
 }
+.stars {
+    opacity: 0;
+}
+.stars:hover {
+    opacity: 1;
+    color: yellow;
+}
