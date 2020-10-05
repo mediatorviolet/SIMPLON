@@ -34,15 +34,14 @@
             <div id="test" class="col bg-dark mt-3 mr-lg-2 mr-xs-auto">
                 <h3 class="mb-5">List</h3>
                 <div class="mb-5">
-                    <ul class="bg-secondary">
-                        <li class="myList"><input type="checkbox" class="mr-3 myCheck" onclick="check()">task 1</li>
-                        <li class="myList"><input type="checkbox" class="mr-3 myCheck" onclick="check()">task 2</li>
+                    <ul id="myList" class="bg-secondary">
+                        <li class="myItem"><input type="checkbox" class="mr-3 myCheck" onclick="check()">task 1</li>
+                        <li class="myItem"><input type="checkbox" class="mr-3 myCheck" onclick="check()">task 2</li>
                     </ul>
                 </div>
                 <div>
                     <input id="newTask" class="mb-3" type="text" placeholder="Create new task">
-                    <button id="addBtn" type="button" class="btn btn-warning"
-                        onclick="addTask()">Create</button>
+                    <button id="addBtn" type="button" class="btn btn-warning">Create</button>
                 </div>
             </div>
             <div class="col bg-dark mt-3 ml-lg-2 ml-xs-auto">
