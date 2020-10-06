@@ -1,5 +1,4 @@
 // Line-through each checked element
-
 function check() {
     var checkbox = document.getElementsByClassName("myCheck");
     var lineThrough = document.getElementsByClassName("myItem");
@@ -76,7 +75,20 @@ function addTask() {
     }
 }
 
-var addBtn = document.getElementById('addBtn');
-addBtn.addEventListener('click', addTask);
+var createBtn = document.getElementById('createBtn');
+createBtn.addEventListener('click', addTask);
 
 // idée => quand clicked important va en haut de la liste (:
+
+
+/****** Description ******/
+
+// Add description
+var description = document.getElementById('descr').value;
+var descriptionArea = document.getElementById('descrArea');
+function addDescritpion() {
+    descriptionArea.innerText = description;
+}
+
+var addBtn = document.getElementById('addBtn');
+addBtn.addEventListener('click', addDescritpion);
