@@ -8,7 +8,7 @@ div, input {
     border-radius: 10px;
 }
 .stars {
-    opacity: 0;
+    /*opacity: 0.1;*/
 }
 .stars:hover {
     opacity: 1;
