@@ -26,6 +26,16 @@ for (i = 0; i < stars.length; i++) {
     }
 }
 
+// Click on a close button to hide the current list item
+var bins = document.getElementsByClassName("bin");
+var j;
+for (j = 0; j < bins.length; j++) {
+    bins[j].onclick = function () {
+        var li = this.parentElement;
+        li.style.display = "none";
+    }
+}
+
 // Add a new task
 function addTask() {
     var newTask = document.getElementById('newTask').value;
@@ -39,10 +49,13 @@ function addTask() {
     var star = document.createElement('i');
     star.className = 'fas fa-star mx-auto stars';
     //star.setAttribute('onclick', 'importantTask()')
+    var bin = document.createElement('i');
+    bin.className = 'fas fa-trash-alt float-right mr-2 my-1 bin';
     if (newTask != '') {
         li.appendChild(input);
         li.appendChild(document.createTextNode(newTask));
         li.appendChild(star);
+        li.appendChild(bin);
         ul.appendChild(li);
     }
     for (i = 0; i < stars.length; i++) {
@@ -53,6 +66,12 @@ function addTask() {
             } else {
                 target.style.color = '';
             }
+        }
+    }
+    for (j = 0; j < bins.length; j++) {
+        bins[j].onclick = function () {
+            var li = this.parentElement;
+            li.style.display = "none";
         }
     }
 }
