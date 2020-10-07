@@ -47,7 +47,6 @@ function addTask() {
     input.setAttribute('onclick', 'check()');
     var star = document.createElement('i');
     star.className = 'fas fa-star mx-auto stars';
-    //star.setAttribute('onclick', 'importantTask()')
     var bin = document.createElement('i');
     bin.className = 'fas fa-trash-alt float-right mr-2 my-1 bin';
     if (newTask != '') {
@@ -77,6 +76,21 @@ function addTask() {
 
 var createBtn = document.getElementById('createBtn');
 createBtn.addEventListener('click', addTask);
+
+// Pagination
+$('#demo').pagination({
+    dataSource: ['1', '2', '3', '4', '5'],
+    pageSize: 10,
+    showPrevious: true,
+    showNext: true,
+    callback: function (data, pagination) {
+        // template method of yourself
+        var html = template(data);
+        dataContainer.html(html);
+    }
+})
+
+
 
 // idée => quand clicked important va en haut de la liste (:
 
