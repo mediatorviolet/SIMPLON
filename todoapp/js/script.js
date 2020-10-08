@@ -35,6 +35,14 @@ for (j = 0; j < bins.length; j++) {
     }
 }
 
+/****** Pagination ******/
+
+/*var monkeyList = new List('test-list', {
+    valueNames: ['name'],
+    page: 1,
+    pagination: true
+});*/
+
 // Add a new task
 function addTask() {
     var newTask = document.getElementById('newTask').value;
@@ -45,17 +53,25 @@ function addTask() {
     input.className = 'mr-3 myCheck';
     input.setAttribute('type', 'checkbox');
     input.setAttribute('onclick', 'check()');
+    var p = document.createElement('p');
+    p.className = 'name'
     var star = document.createElement('i');
     star.className = 'fas fa-star mx-auto stars';
     var bin = document.createElement('i');
     bin.className = 'fas fa-trash-alt float-right mr-2 my-1 bin';
     if (newTask != '') {
         li.appendChild(input);
-        li.appendChild(document.createTextNode(newTask));
+        li.appendChild(p);
+        p.appendChild(document.createTextNode(newTask));
         li.appendChild(star);
         li.appendChild(bin);
         ul.appendChild(li);
     }
+    var monkeyList = new List('test-list', {
+        valueNames: ['name'],
+        page: 3,
+        pagination: true
+    });
     for (i = 0; i < stars.length; i++) {
         stars[i].onclick = function () {
             var target = this;
@@ -77,8 +93,9 @@ function addTask() {
 var createBtn = document.getElementById('createBtn');
 createBtn.addEventListener('click', addTask);
 
+
 // Pagination
-$('#demo').pagination({
+/*$('#demo').pagination({
     dataSource: ['1', '2', '3', '4', '5'],
     pageSize: 10,
     showPrevious: true,
@@ -88,7 +105,7 @@ $('#demo').pagination({
         var html = template(data);
         dataContainer.html(html);
     }
-})
+})*/
 
 
 
@@ -98,7 +115,7 @@ $('#demo').pagination({
 /****** Description ******/
 
 // Add description
-var description = document.getElementById('descr').value;
+/*var description = document.getElementById('descr').value;
 var descriptionArea = document.getElementById('descrArea');
 function addDescritpion() {
     descriptionArea.innerText = description;
@@ -106,3 +123,4 @@ function addDescritpion() {
 
 var addBtn = document.getElementById('addBtn');
 addBtn.addEventListener('click', addDescritpion);
+*/

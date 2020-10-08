@@ -13,9 +13,13 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
+    
 </head>
 
 <body>
+    <!-- Pagination + search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <!-- Start Navbar -->
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand ml-5">
@@ -23,7 +27,7 @@
         </a>
         <!--<form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-warning my-2 my-sm-0 search" type="text">Search</button>
         </form>-->
     </nav>
     <!-- End Navbar -->
@@ -31,35 +35,23 @@
     <!-- Start Container -->
     <section class="container">
         <div class="row">
-            <div id="test" class="col bg-dark mt-3 mr-lg-2 mr-xs-auto">
+            <div class="col bg-dark mt-3 mr-lg-2 mr-xs-auto">
                 <h3 class="mb-5">List</h3>
-                <div id="demo" class="mb-5">
-                    <ul id="myList" class="bg-secondary">
-                        <li class="myItem"><input type="checkbox" class="mr-3 myCheck" onclick="check()">task 1
+                <div id="test-list" class="mb-5">
+                    <input type="text" class="search" placeholder="search"/>
+                    <ul id="myList" class="bg-secondary list">
+                        <li class="myItem"><input type="checkbox" class="mr-3 myCheck" onclick="check()"><p class="name">task1</p>
                             <i class="fas fa-star mx-auto stars"></i>
                             <i class="fas fa-trash-alt float-right mr-2 my-1 bin"></i></li>
-                        <li class="myItem"><input type="checkbox" class="mr-3 myCheck" onclick="check()">task 2
+                        <li class="myItem"><input type="checkbox" class="mr-3 myCheck" onclick="check()"><p class="name">task2</p>
                             <i class="fas fa-star mx-auto stars"></i>
                             <i class="fas fa-trash-alt float-right mr-2 my-1 bin"></i></li>
                     </ul>
+                    <ul class="pagination"></ul>
                 </div>
                 <div>
                     <input id="newTask" class="mb-3" type="text" placeholder="Create new task">
                     <button id="createBtn" type="button" class="btn btn-warning">Create</button>
-                    <!--<div class="paginationjs paginationjs-big">
-                        <div class="paginationjs-pages">
-                            <ul>
-                                <li class="paginationjs-page J-paginationjs-page active" data-num="1"><a>1</a></li>
-                                <li class="paginationjs-page J-paginationjs-page" data-num="2"><a href="">2</a></li>
-                                <li class="paginationjs-page J-paginationjs-page" data-num="3"><a href="">3</a></li>
-                                <li class="paginationjs-page J-paginationjs-page" data-num="4"><a href="">4</a></li>
-                                <li class="paginationjs-page J-paginationjs-page" data-num="5"><a href="">5</a></li>
-                                <li class="paginationjs-ellipsis disabled"><a>...</a></li>
-                                <li class="paginationjs-page paginationjs-last J-paginationjs-page" data-num="20"><a
-                                        href="">20</a></li>
-                            </ul>
-                        </div>
-                    </div>-->
                 </div>
             </div>
             <!--<div class="col bg-dark mt-3 ml-lg-2 ml-xs-auto">
@@ -95,8 +87,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <!-- Pagination.js -->
-    <script src="js/pagination.js"></script>
+    
     <!-- Main Script -->
     <script src="js/script.js"></script>
 </body>
