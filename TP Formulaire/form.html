@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <h1>EVENT REGISTRATION FORM</h1>
+        </header>
+        <form action="">
+            <div id="tableau">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>
+                            <label for="first_name">First Name<input type="text" name="first_name" class="labeled"></label>
+                        </td>
+                        <td>
+                            <label for="last_name">Last Name<input type="text" name="last_name" class="labeled"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Compagny</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <input type="email" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>
+                            <label for="area_code">Area Code <input class="labeled" type="number" name="area_code" id=""></label>
+                        </td>
+                        <td>
+                            <label for="phone_number">Phone Number <input class="labeled" type="number" name="phone_number" id=""></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Subject</td>
+                        <td>
+                            <select name="subject" id="">
+                                <option value="">Choose option</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <p>Are you an existing customer?</p>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="yes" id="">
+                        </td>
+                        <td>Yes</td>
+                        <td>
+                            <input type="radio" name="no" id="">
+                        </td>
+                        <td>No</td>
+                    </tr>
+                </table>
+                <button type="submit">REGISTER</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

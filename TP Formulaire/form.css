@@ -1,0 +1,38 @@
+body {
+    background:linear-gradient(47deg,#2daef7 0%,#2f85f6 60%,#8c3cee 100%);
+}
+#page {
+    width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#tableau {
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.labeled {
+    display: inline-block;
+    width: 7em;
+    position: relative;
+    top: -3em;
+}
+label {
+    display: inline-block;
+    width: 7em;
+    margin-right: .5em;
+    padding-top: 1.5em;
+}
+ul li {
+    list-style-type: none;
+    /*float: left;*/
+}
