@@ -34,7 +34,7 @@ h1 {
     top: -3em;
     margin-bottom: 0rem;
 }
-label {
+.formLabel {
     display: inline-block;
     width: 7em;
     margin-right: .5em;
@@ -54,7 +54,8 @@ input {
     padding: 12px 20px;
 }
 input[type="radio"]{
-    margin: auto;
+    margin-top: -1px;
+    vertical-align: middle;
 }
 select {
     background-color: #e5e5e5;
@@ -101,4 +102,7 @@ td {
     margin-right: auto;
     width: 90%;
     font-weight: bold;
+}
+.botLabel {
+    vertical-align: super;
 }

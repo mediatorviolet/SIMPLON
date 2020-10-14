@@ -22,11 +22,11 @@
                     <tr>
                         <td class="subtitle">Name</td>
                         <td>
-                            <label for="first_name"><input type="text" name="first_name" class="labeled name">First
+                            <label class="formLabel" for="first_name"><input type="text" name="first_name" class="labeled name">First
                                 Name</label>
                         </td>
                         <td>
-                            <label for="last_name"><input type="text" name="last_name" class="labeled name">Last
+                            <label class="formLabel" for="last_name"><input type="text" name="last_name" class="labeled name">Last
                                 Name</label>
                         </td>
                     </tr>
@@ -45,9 +45,9 @@
                     <tr>
                         <td class="subtitle">Phone</td>
                         <td colspan="2">
-                            <label for="area_code" style="margin-right: 4rem;"><input style="width: 100%;"
+                            <label class="formLabel" for="area_code" style="margin-right: 4rem;"><input style="width: 100%;"
                                     class="labeled" type="tel" name="area_code" id="">Area Code</label>
-                            <label for="phone_number"><input style="width: 305%;" class="labeled" type="tel"
+                            <label class="formLabel" for="phone_number"><input style="width: 305%;" class="labeled" type="tel"
                                     name="phone_number" id="">Phone Number</label>
                         </td>
                         <!--<td>
@@ -70,12 +70,12 @@
                 <table style="padding-top: 0rem;">
                     <tr>
                         <td style="width: .5rem;">
-                            <input type="radio" name="yes" id="">
-                            Yes
+                            <input type="radio" name="yes" id="yes">
+                            <label class="botLabel" for="yes">Yes</label>
                         </td>
                         <td>
-                            <input type="radio" name="no" id="">
-                            No
+                            <input type="radio" name="no" id="no">
+                            <label class="botLabel" for="no">No</label>
                         </td>
                     </tr>
                     <tr>
