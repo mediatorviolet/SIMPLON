@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="form.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,39 +20,44 @@
             <div id="tableau">
                 <table>
                     <tr>
-                        <td>Name</td>
+                        <td class="subtitle">Name</td>
                         <td>
-                            <label for="first_name">First Name<input type="text" name="first_name" class="labeled name"></label>
+                            <label for="first_name"><input type="text" name="first_name" class="labeled name">First
+                                Name</label>
                         </td>
                         <td>
-                            <label for="last_name">Last Name<input type="text" name="last_name" class="labeled name"></label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Compagny</td>
-                        <td>
-                            <input type="text">
+                            <label for="last_name"><input type="text" name="last_name" class="labeled name">Last
+                                Name</label>
                         </td>
                     </tr>
                     <tr>
-                        <td>Email</td>
-                        <td>
-                            <input type="email" name="" id="">
+                        <td class="subtitle">Compagny</td>
+                        <td colspan="2">
+                            <input style="width: 91%; margin-top: 1rem;" type="text">
                         </td>
                     </tr>
                     <tr>
-                        <td>Phone</td>
-                        <td>
-                            <label for="area_code">Area Code <input class="labeled" type="tel" name="area_code" id=""></label>
-                        </td>
-                        <td>
-                            <label for="phone_number">Phone Number <input class="labeled" type="tel" name="phone_number" id=""></label>
+                        <td class="subtitle">Email</td>
+                        <td colspan="2">
+                            <input style="width: 91%; margin: auto;" type="email" name="" id="">
                         </td>
                     </tr>
                     <tr>
-                        <td>Subject</td>
-                        <td>
-                            <select name="subject" id="">
+                        <td class="subtitle">Phone</td>
+                        <td colspan="2">
+                            <label for="area_code" style="margin-right: 4rem;"><input style="width: 100%;"
+                                    class="labeled" type="tel" name="area_code" id="">Area Code</label>
+                            <label for="phone_number"><input style="width: 305%;" class="labeled" type="tel"
+                                    name="phone_number" id="">Phone Number</label>
+                        </td>
+                        <!--<td>
+                            <label for="phone_number"><input style="width: 240%;" class="labeled" type="tel" name="phone_number" id="">Phone Number</label>
+                        </td>-->
+                    </tr>
+                    <tr>
+                        <td class="subtitle">Subject</td>
+                        <td colspan="2">
+                            <select style="width: 98%;" name="subject" id="">
                                 <option value="">Choose option</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -58,20 +66,24 @@
                         </td>
                     </tr>
                 </table>
-                <p>Are you an existing customer?</p>
-                <table>
+                <p id="question">Are you an existing customer?</p>
+                <table style="padding-top: 0rem;">
                     <tr>
-                        <td>
+                        <td style="width: .5rem;">
                             <input type="radio" name="yes" id="">
+                            Yes
                         </td>
-                        <td>Yes</td>
                         <td>
                             <input type="radio" name="no" id="">
+                            No
                         </td>
-                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">REGISTER</button>
+                        </td>
                     </tr>
                 </table>
-                <button type="submit">REGISTER</button>
             </div>
         </form>
     </div>

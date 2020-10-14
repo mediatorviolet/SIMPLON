@@ -1,12 +1,15 @@
 body {
     background:linear-gradient(47deg,#2daef7 0%,#2f85f6 60%,#8c3cee 100%);
+    font-family: 'Roboto', sans-serif;
+    color: #74797e;
 }
 #page {
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
 header {
+    margin-top: 1.5rem;
     background-color: #1a1a1a;
     color: #fff;
     text-align: center;
@@ -15,47 +18,87 @@ header {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+h1 {
+    margin: auto;
+}
 #tableau {
+    margin-bottom: 4rem;
     background-color: #fff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    height: 38rem;
 }
 .labeled {
     display: inline-block;
     width: 7em;
-    position: relative;
     top: -3em;
+    margin-bottom: 0rem;
 }
 label {
     display: inline-block;
     width: 7em;
     margin-right: .5em;
     padding-top: 1.5em;
-    color: gray;
+    color: #aeacb5;
+    margin-bottom: 1rem;
+}
+.subtitle {
+    font-weight: bold;
 }
 input {
     background-color: #e5e5e5;
     border-radius: 5px;
     height: 1.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    padding: 12px 20px;
+}
+input[type="radio"]{
+    margin: auto;
 }
 select {
     background-color: #e5e5e5;
     border-radius: 5px;
+    padding: 12px 20px;
+    height: 3rem;
+    border: none;
+    color: gray;
 }
+select {
+    cursor: pointer;
+}
+/*option:hover {
+    cursor: pointer;
+}*/
 button {
     background-color: #ff4b5a;
     border-radius: 5px;
+    margin-bottom: 4rem;
+    margin-top: .5rem;
     color: #fff;
+    font-weight: bold;
+    height: 3rem;
+    width: 10rem;
+    cursor: pointer;
 }
 table {
-    padding-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
 }
+/*tr:first-child {
+    font-weight: bold;
+}*/
 td {
     width: 6rem;
 }
 .name {
-    width: 20rem;
+    width: 205%;
+}
+#question {
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-weight: bold;
 }
