@@ -2,12 +2,12 @@ body {
     background:linear-gradient(47deg,#2daef7 0%,#2f85f6 60%,#8c3cee 100%);
 }
 #page {
-    width: 45rem;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 header {
-    background-color: #000;
+    background-color: #1a1a1a;
     color: #fff;
     text-align: center;
     padding-top: 0.5rem;
@@ -31,8 +31,31 @@ label {
     width: 7em;
     margin-right: .5em;
     padding-top: 1.5em;
+    color: gray;
 }
-ul li {
-    list-style-type: none;
-    /*float: left;*/
+input {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    height: 1.5rem;
+}
+select {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+}
+button {
+    background-color: #ff4b5a;
+    border-radius: 5px;
+    color: #fff;
+}
+table {
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+td {
+    width: 6rem;
+}
+.name {
+    width: 20rem;
 }
