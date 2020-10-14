@@ -4,7 +4,7 @@ body {
     color: #74797e;
 }
 #page {
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -44,6 +44,7 @@ h1 {
 }
 .subtitle {
     font-weight: bold;
+    margin-left: 1rem;
 }
 input {
     background-color: #e5e5e5;
@@ -94,11 +95,11 @@ td {
     width: 6rem;
 }
 .name {
-    width: 205%;
+    width: 160%;
 }
 #question {
     padding-top: 1rem;
-    margin-left: auto;
+    margin-left: 3rem;
     margin-right: auto;
     width: 90%;
     font-weight: bold;
