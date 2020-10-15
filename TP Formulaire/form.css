@@ -1,5 +1,5 @@
 body {
-    background:linear-gradient(47deg,#2daef7 0%,#2f85f6 60%,#8c3cee 100%);
+    background:linear-gradient(45deg,#41acea 0%,#6066f4 50%,#b551f8 100%);
     font-family: 'Roboto', sans-serif;
     color: #74797e;
 }
@@ -80,14 +80,13 @@ input[type='radio']:checked:after {
     width: 10px;
     height: 10px;
     border-radius: 15px;
-    top: 3px;
-    left: 4px;
+    top: 1px;
+    left: 5px;
     position: relative;
     background-color:#57b846;
     content: '';
     display: inline-block;
     visibility: visible;
-    border: 2px solid white;
 }
 select {
     background-color: #e5e5e5;
@@ -129,4 +128,5 @@ td {
 }
 .botLabel {
     vertical-align: super;
+    cursor: pointer;
 }
