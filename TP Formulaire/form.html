@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <script src="form.js"></script>
     <div id="page">
         <header>
             <h1>EVENT REGISTRATION FORM</h1>
@@ -25,12 +26,12 @@
                         </td>
                         <td>
                             <label class="formLabel" for="first_name"><input type="text" name="first_name"
-                                    class="labeled name">First
+                                    class="labeled name" required>First
                                 Name</label>
                         </td>
                         <td>
                             <label class="formLabel" for="last_name"><input type="text" name="last_name"
-                                    class="labeled name">Last
+                                    class="labeled name" required>Last
                                 Name</label>
                         </td>
                     </tr>
@@ -39,7 +40,7 @@
                             <p class="subtitle" style="display: inline-block; vertical-align: super;">Compagny</p>
                         </td>
                         <td colspan="2">
-                            <input style="width: 83%;" type="text">
+                            <input style="width: 83%;" type="text" required>
                         </td>
                     </tr>
                     <tr>
@@ -47,7 +48,7 @@
                             <p class="subtitle">Email</p>
                         </td>
                         <td colspan="2">
-                            <input style="width: 83%; margin: auto;" type="email" name="" id="">
+                            <input style="width: 83%; margin: auto;" type="email" name="" id="email" required>
                         </td>
                     </tr>
                     <tr>
@@ -57,9 +58,11 @@
                         <td colspan="2">
                             <label class="formLabel" for="area_code"
                                 style="margin-right: 4rem; padding-top: 1em;"><input style="width: 100%;"
-                                    class="labeled" type="tel" name="area_code" id="">Area Code</label>
+                                    class="labeled" type="tel" name="area_code" id="" required pattern="\d+">Area
+                                Code</label>
                             <label class="formLabel" for="phone_number" style="padding-top: 1em;"><input
-                                    style="width: 186%;" class="labeled" type="tel" name="phone_number" id="">Phone
+                                    style="width: 186%;" class="labeled" type="tel" name="phone_number" id="" required
+                                    pattern="\d+">Phone
                                 Number</label>
                         </td>
                     </tr>
@@ -68,7 +71,7 @@
                             <p class="subtitle">Subject</p>
                         </td>
                         <td colspan="2">
-                            <select style="width: 92%;" name="subject" id="">
+                            <select style="width: 92%;" name="subject" id="" required>
                                 <option value="">Choose option</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -81,11 +84,11 @@
                 <table style="padding-top: 0rem; margin-left: 3.5rem;">
                     <tr>
                         <td style="width: .5rem;">
-                            <input type="radio" name="yes" id="yes">
+                            <input type="radio" name="customer" id="yes" required>
                             <label class="botLabel" for="yes">Yes</label>
                         </td>
                         <td>
-                            <input type="radio" name="no" id="no">
+                            <input type="radio" name="customer" id="no" required>
                             <label class="botLabel" for="no">No</label>
                         </td>
                     </tr>
