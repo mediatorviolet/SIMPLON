@@ -54,6 +54,12 @@ input {
     border: none;
     padding: 12px 20px;
 }
+/*input:invalid {
+    border: 1px solid red;
+}*/
+/*input:valid {
+    border: 1px solid black;
+}*/
 input[type="radio"]{
     margin-top: -1px;
     vertical-align: middle;
