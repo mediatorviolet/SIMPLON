@@ -26,7 +26,7 @@ h1 {
     background-color: #fff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    height: 38rem;
+    height: 39rem;
 }
 .labeled {
     display: inline-block;
@@ -44,7 +44,7 @@ h1 {
 }
 .subtitle {
     font-weight: bold;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 input {
     background-color: #e5e5e5;
@@ -57,6 +57,37 @@ input {
 input[type="radio"]{
     margin-top: -1px;
     vertical-align: middle;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0px;
+    cursor: pointer;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+
+}
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: 3px;
+    left: 4px;
+    position: relative;
+    background-color:#57b846;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
 }
 select {
     background-color: #e5e5e5;
@@ -65,13 +96,8 @@ select {
     height: 3rem;
     border: none;
     color: gray;
-}
-select {
     cursor: pointer;
 }
-/*option:hover {
-    cursor: pointer;
-}*/
 button {
     background-color: #ff4b5a;
     border-radius: 5px;
@@ -88,18 +114,15 @@ table {
     margin-right: auto;
     width: 90%;
 }
-/*tr:first-child {
-    font-weight: bold;
-}*/
 td {
     width: 6rem;
 }
 .name {
-    width: 160%;
+    width: 135%;
 }
 #question {
     padding-top: 1rem;
-    margin-left: 3rem;
+    margin-left: 4rem;
     margin-right: auto;
     width: 90%;
     font-weight: bold;
