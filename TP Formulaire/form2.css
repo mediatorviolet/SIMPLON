@@ -1,0 +1,53 @@
+body {
+    background:linear-gradient(45deg,#41acea 0%,#6066f4 50%,#b551f8 100%);
+    font-family: 'Roboto', sans-serif;
+    color: #74797e;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+header {
+    width: 100%;
+    background-color: #1a1a1a;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+}
+.form {
+    background-color: #fff;
+    padding-top: 3rem;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    height: 1.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    padding: 12px 20px;
+}
+select {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    padding: 12px 20px;
+    height: 3rem;
+    border: none;
+    color: gray;
+    cursor: pointer;
+}
+.subLabel {
+    margin-top: .5rem;
+}
+.box {
+    display: flex;
+}
+.lab {
+    margin-left: 5rem;
+    width: 5rem;
+}
+.preInput {
+    margin-left: 5rem;
+}

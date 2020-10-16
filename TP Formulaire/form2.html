@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="form2.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>EVENT REGISTRATION FORM</h1>
+        </header>
+        <div class="form">
+            <form action="" method="get">
+                <div class="box">
+                    <label class="lab" for="name">Name</label>
+                    <div class="preInput">
+                        <input style="margin-bottom: 0rem;" type="text" name="name" required>
+                        <p class="subLabel">First Name</p>
+                    </div>
+                    <div>
+                        <input style="margin-bottom: 0rem;" type="text" name="name" required>
+                        <p class="subLabel">Last Name</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <label class="lab" for="compagny">Compagny</label>
+                    <div class="preInput">
+                        <input type="text" name="compagny" required>
+                    </div>
+                </div>
+                <div class="box">
+                    <label class="lab" for="email">Email</label>
+                    <div class="preInput">
+                        <input type="email" name="email" id="" required>
+                    </div>
+                </div>
+                <div class="box">
+                    <label class="lab" for="phone">Phone</label>
+                    <div class="preInput">
+                        <input style="margin-bottom: 0rem;" type="tel" name="phone" id="" required>
+                        <p class="subLabel">Area Code</p>
+                    </div>
+                    <div>
+                        <input style="margin-bottom: 0rem;" type="tel" name="phone" id="" required>
+                        <p class="subLabel">Phone Number</p>
+                    </div>   
+                </div>
+                <div class="box">
+                    <label class="lab" for="subject">Subject</label>
+                    <div class="preInput">
+                        <select name="subject" id="" required>
+                            <option value="">Choose option</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <p class="lab">Are you an existing customer?</p>
+                    <input type="radio" name="customer" id="yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="customer" id="no" required>
+                    <label for="no">No</label>
+                </div>
+                <div>
+                    <button type="submit">REGISTER</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
