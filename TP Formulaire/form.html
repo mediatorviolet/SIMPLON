@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <script src="form.js"></script>
     <div id="page">
         <header>
             <h1>EVENT REGISTRATION FORM</h1>
@@ -25,13 +24,15 @@
                             <p class="subtitle">Name</p>
                         </td>
                         <td>
-                            <label class="formLabel" for="first_name"><input type="text" name="first_name"
-                                    class="labeled name" required>First
+                            <label class="formLabel" for="first_name" id="firstName"><input type="text"
+                                    name="first_name" class="labeled name" required
+                                    pattern="^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$">First
                                 Name</label>
                         </td>
                         <td>
-                            <label class="formLabel" for="last_name"><input type="text" name="last_name"
-                                    class="labeled name" required>Last
+                            <label class="formLabel" for="last_name" id="lastName"><input type="text" name="last_name"
+                                    class="labeled name" required
+                                    pattern="^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$">Last
                                 Name</label>
                         </td>
                     </tr>
@@ -40,7 +41,8 @@
                             <p class="subtitle" style="display: inline-block; vertical-align: super;">Compagny</p>
                         </td>
                         <td colspan="2">
-                            <input style="width: 83%;" type="text" required>
+                            <input style="width: 83%;" type="text" required
+                                pattern="^[a-zA-Z0-9éèîïÉÈÎÏ][a-z0-9éèêàçîï]+([-'\s][a-zA-Z0-9éèîïÉÈÎÏ][a-z0-9éèêàçîï]+)?$">
                         </td>
                     </tr>
                     <tr>
@@ -58,7 +60,8 @@
                         <td colspan="2">
                             <label class="formLabel" for="area_code"
                                 style="margin-right: 4rem; padding-top: 1em;"><input style="width: 100%;"
-                                    class="labeled" type="tel" name="area_code" id="" required pattern="\d+">Area
+                                    class="labeled" type="tel" name="area_code" id="" required
+                                    pattern="^([0-9]+|[-](\d+)){1,5}$">Area
                                 Code</label>
                             <label class="formLabel" for="phone_number" style="padding-top: 1em;"><input
                                     style="width: 186%;" class="labeled" type="tel" name="phone_number" id="" required
@@ -94,13 +97,14 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <button type="submit">REGISTER</button>
+                            <button type="submit" id="submitBtn">REGISTER</button>
                         </td>
                     </tr>
                 </table>
             </div>
         </form>
     </div>
+    <script src="form.js"></script>
 </body>
 
 </html>
