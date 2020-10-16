@@ -20,19 +20,22 @@
             <form action="" method="get">
                 <div class="box">
                     <label class="lab" for="name">Name</label>
-                    <div class="preInput">
-                        <input style="margin-bottom: 0rem;" type="text" name="name" required>
+                    <div class="">
+                        <input style="margin-bottom: 0rem; margin-right: 3rem; width: 70%;" type="text" name="name" required
+                        pattern="^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$">
                         <p class="subLabel">First Name</p>
                     </div>
                     <div>
-                        <input style="margin-bottom: 0rem;" type="text" name="name" required>
+                        <input style="margin-bottom: 0rem;" type="text" name="name" required
+                        pattern="^[a-zA-ZéèîïÉÈÎÏ][a-zA-Zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zA-Zéèêàçîï]+)?$">
                         <p class="subLabel">Last Name</p>
                     </div>
                 </div>
                 <div class="box">
                     <label class="lab" for="compagny">Compagny</label>
                     <div class="preInput">
-                        <input type="text" name="compagny" required>
+                        <input type="text" name="compagny" required
+                        pattern="^[a-zA-Z0-9éèîïÉÈÎÏ][a-zA-Z0-9éèêàçîï]+([-'\s][a-zA-Z0-9éèîïÉÈÎÏ][a-zA-Z0-9éèêàçîï]+)?$">
                     </div>
                 </div>
                 <div class="box">
@@ -43,12 +46,14 @@
                 </div>
                 <div class="box">
                     <label class="lab" for="phone">Phone</label>
-                    <div class="preInput">
-                        <input style="margin-bottom: 0rem;" type="tel" name="phone" id="" required>
+                    <div class="">
+                        <input style="margin-bottom: 0rem; margin-right: 3rem; width: 70%;" type="tel" name="phone" id="" required
+                        pattern="^([0-9+]+|[-](\d+)){1,5}$">
                         <p class="subLabel">Area Code</p>
                     </div>
                     <div>
-                        <input style="margin-bottom: 0rem;" type="tel" name="phone" id="" required>
+                        <input style="margin-bottom: 0rem;" type="tel" name="phone" id="" required
+                        pattern="\d+">
                         <p class="subLabel">Phone Number</p>
                     </div>   
                 </div>
@@ -64,7 +69,7 @@
                     </div>
                 </div>
                 <div>
-                    <p class="lab">Are you an existing customer?</p>
+                    <p class="lab" style="width: auto;">Are you an existing customer?</p>
                     <input type="radio" name="customer" id="yes" required>
                     <label for="yes">Yes</label>
                     <input type="radio" name="customer" id="no" required>
