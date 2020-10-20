@@ -1,0 +1,30 @@
+#liseret, #contenu {
+    display: inline-block;
+    vertical-align: top;
+}
+#liseret {
+    width: 10%;
+    margin-right: 3%;
+    height: 500px;
+    background: url('img/lodyas.png');
+    border-radius: 10px;
+}
+#contenu {
+    width: 85%;
+}
+h1 {
+    text-align: center;
+}
+#contenu a {
+    float: right;
+}
+#container {
+    display: flex;
+    margin-top: 8em;
+    justify-content: space-between;
+}
+section:nth-child(1), section:nth-child(2) {
+    display: inline-block;
+    margin-right: 2em;
+    text-align: justify;
+}
