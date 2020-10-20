@@ -28,3 +28,17 @@ section:nth-child(1), section:nth-child(2) {
     margin-right: 2em;
     text-align: justify;
 }
+@media all and (max-device-width: 1024px) {
+    #liseret {
+        display: none;
+    }
+    #contenu {
+        width: auto;
+    }
+    #contenu a {
+        margin-right: .5em;
+    }
+    #container {
+        flex-direction: column;
+    }
+}
